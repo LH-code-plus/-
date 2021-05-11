@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:background="#FFFFFF"
+	android:weightSum="3.5">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="0.5"
+		android:gravity="center"
+		android:orientation="horizontal"
+		android:weightSum="4">
+
+	    <ImageButton
+	        android:id="@+id/play"
+			android:layout_width="0dp"
+	        android:layout_height="50dp"
+			android:layout_weight="1"
+			android:background="#FFFFFF"
+	        android:src="@drawable/play"/>
+
+	    <ImageButton
+		    android:id="@+id/lastone"
+		    android:layout_width="0dp"
+		    android:layout_height="50dp"
+		    android:layout_weight="1"
+			android:background="#FFFFFF"
+		    android:src="@drawable/last" />
+
+		<ImageButton
+		    android:id="@+id/nextone"
+		    android:layout_width="0dp"
+		    android:layout_height="50dp"
+		    android:layout_weight="1"
+			android:background="#FFFFFF"
+		    android:src="@drawable/next" />
+
+	    <ImageButton
+		    android:id="@+id/finish"
+		    android:layout_width="0dp"
+		    android:layout_height="50dp"
+		    android:layout_weight="1"
+		    android:background="#FFFFFF"
+		    android:src="@drawable/finish" />
+    </LinearLayout>
+
+	<LinearLayout
+	    android:orientation="vertical"
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+		android:layout_weight="2.5"
+		android:gravity="center">
+
+        <TextView
+	        android:id="@+id/title"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+			android:layout_margin="20dp"
+	        android:textColor="#9C27B0"
+			android:text="歌曲名称"
+			android:textSize="50dp"
+	        android:ellipsize="marquee"
+	        android:gravity="center_horizontal"
+	        android:marqueeRepeatLimit="marquee_forever"/>
+        <TextView
+	        android:id="@+id/author"
+	        android:textSize="40dp"
+	        android:gravity="center_vertical"
+			android:text="歌手"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+</LinearLayout>
